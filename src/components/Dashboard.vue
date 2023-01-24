@@ -48,7 +48,8 @@
     },
     methods: {
       async getPedidos() {
-        const req = await fetch('http://localhost:3000/burgers')
+        const url = process.env.VUE_APP_API_URL
+        const req = await fetch(`${url}burgers`)
 
         const data = await req.json()
 
@@ -60,8 +61,8 @@
 
       },
       async getStatus() {
-
-        const req = await fetch('http://localhost:3000/status')
+        const url = process.env.VUE_APP_API_URL
+        const req = await fetch(`${url}status`)
 
         const data = await req.json()
 
@@ -69,8 +70,8 @@
         console.log("status: ",data);
       },
       async deleteBurger(id) {
-
-        const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+        const url = process.env.VUE_APP_API_URL
+        const req = await fetch(`${url}burgers/${id}`, {
           method: "DELETE"
         });
 
@@ -84,8 +85,8 @@
         const option = event.target.value;
 
         const dataJson = JSON.stringify({status: option});
-
-        const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+        const url = process.env.VUE_APP_API_URL
+        const req = await fetch(`${url}burgers/${id}`, {
           method: "PATCH",
           headers: { "Content-Type" : "application/json" },
           body: dataJson
