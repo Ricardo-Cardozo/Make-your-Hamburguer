@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "json-server": "json-server --watch db/db.json",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "backend": "json-server --watch db/db.json"
+    "start": "npm-run-all --parallel json-server serve"
   },
   "dependencies": {
     "core-js": "^3.8.3",
