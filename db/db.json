@@ -77,5 +77,49 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "nome": "rasd",
+      "carne": "Veggie burger",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Cheddar"
+      ],
+      "status": "Em produção",
+      "id": 2
+    },
+    {
+      "nome": "joão",
+      "carne": "Maminha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Pepino",
+        "Cebola roxa"
+      ],
+      "status": "Solicitado",
+      "id": 5
+    },
+    {
+      "nome": "joão",
+      "carne": "Maminha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Tomate",
+        "Cheddar"
+      ],
+      "status": "Solicitado",
+      "id": 6
+    },
+    {
+      "nome": "joão",
+      "carne": "Picanha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 7
+    }
+  ]
 }

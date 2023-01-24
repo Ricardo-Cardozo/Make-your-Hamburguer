@@ -28,7 +28,7 @@ export default {
 
  .main_container {
   margin: 50px;
-  min-height: 250px;
+  min-height: 68vh;
  }
 
  h1 {
