@@ -1,0 +1,8 @@
+{
+  "build": {
+    "env": {
+      "JSON_SERVER_COMMAND": "json-server --watch db/db.json"
+    },
+    "command": "npm run json-server & npm run start"
+  }
+}
