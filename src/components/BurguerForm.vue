@@ -54,7 +54,7 @@ export default {
   },
   methods: {
     async getIngredientes() {
-      const req = await fetch('https://make-your-hamburguer.vercel.app/ingredientes')
+      const req = await fetch('https://my-json-server.typicode.com/Ricardo-Cardozo/backend-JsonServer/ingredientes')
       const data = await req.json()
 
       this.paes = data.paes
@@ -75,7 +75,7 @@ export default {
 
       const dataJson = JSON.stringify(data)    
 
-      const req = await fetch("https://make-your-hamburguer.vercel.app/burgers", {
+      const req = await fetch("https://my-json-server.typicode.com/Ricardo-Cardozo/backend-JsonServer/burgers", {
         method: "POST",
         headers: { "Content-Type" : "application/json" },
         body: dataJson
